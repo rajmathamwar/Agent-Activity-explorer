@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Activity</title>
+  <link rel="icon" href="data:,">
+  <link rel="preload" href="fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/hero.avif" type="image/avif" imagesrcset="assets/hero-850.avif 850w, assets/hero.avif 1700w" imagesizes="(min-width: 1344px) 1216px, calc(100vw - 64px)" fetchpriority="high">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div id="read-progress" class="read-progress"></div>
+  <header class="topbar">
+    <h1 class="brand">Agent Activity</h1>
+    <input id="search" class="search" type="search" placeholder="Search tool calls" aria-label="Search tool calls">
+    <span id="scroll-context" class="scroll-context"></span>
+    <button id="ticker-toggle" class="button" type="button" aria-pressed="false">Show live calls</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source type="image/avif" srcset="assets/hero-850.avif 850w, assets/hero.avif 1700w" sizes="(min-width: 1344px) 1216px, calc(100vw - 64px)">
+        <source type="image/webp" srcset="assets/hero-850.webp 850w, assets/hero.webp 1700w" sizes="(min-width: 1344px) 1216px, calc(100vw - 64px)">
+        <img class="hero-image" src="assets/hero.webp" width="1700" height="950" fetchpriority="high" decoding="async" alt="Abstract visual of agent traffic">
+      </picture>
+      <div class="hero-copy">
+        <h2>Every tool call, every agent</h2>
+        <p>See what your AI agents did today, which tools they reached for, and what was blocked.</p>
+      </div>
+    </section>
+
+    <section class="alerts" aria-label="Alerts">
+      <div class="alerts-track">
+        <span class="alert-pill">3 calls blocked by policy in the last hour</span>
+        <span class="alert-pill">support-triage latency above 2s</span>
+        <span class="alert-pill">New agent registered: churn-predictor</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Agents</h2>
+      <div id="agents" class="agent-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2 class="section-title">Recent tool calls</h2>
+        <span id="results-count" class="results-count"></span>
+      </div>
+      <ul id="results" class="results"></ul>
+    </section>
+  </main>
+
+  <div id="row-preview" class="row-preview" hidden></div>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "agent-activity-explorer",
+  "private": true,
+  "scripts": {
+    "api": "node scripts/start-server.js",
+    "perf-clinic": "node scripts/serve-perf-clinic.js",
+    "app": "npm --prefix app run dev",
+    "test": "npm --prefix app test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

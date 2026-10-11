@@ -1,0 +1,106 @@
+{
+  "label": "after",
+  "loadEventMs": 302,
+  "load": {
+    "fcp": 344,
+    "lcp": 344,
+    "cls": 0,
+    "domContentLoaded": 208.80000000004657,
+    "load": 291.9000000001397,
+    "longTasks": 6,
+    "longTaskTotalMs": 888,
+    "tbtMs": 588,
+    "domNodes": 1785,
+    "configScriptMs": 167.9000000001397,
+    "domNodesMetric": 3353,
+    "scriptMs": 1763.1,
+    "layoutCount": 6,
+    "layoutMs": 295.4
+  },
+  "transfer": {
+    "totalKB": 109,
+    "imagesKB": 17,
+    "cssKB": 6,
+    "fontKB": 64,
+    "jsKB": 20,
+    "requests": 18
+  },
+  "idle3s": {
+    "LayoutCount": 0,
+    "RecalcStyleCount": 0,
+    "LayoutDuration": 0,
+    "RecalcStyleDuration": 0,
+    "ScriptDuration": 0,
+    "TaskDuration": 1.7
+  },
+  "scroll": {
+    "LayoutCount": 64,
+    "RecalcStyleCount": 350,
+    "LayoutDuration": 80.2,
+    "RecalcStyleDuration": 136,
+    "ScriptDuration": 101.8,
+    "TaskDuration": 2602.5,
+    "frames": 232,
+    "avgFrameMs": 19.8,
+    "p95FrameMs": 33.4,
+    "maxFrameMs": 83.4,
+    "framesOver50ms": 1,
+    "longTasks": 1
+  },
+  "hover150moves": {
+    "LayoutCount": 150,
+    "RecalcStyleCount": 151,
+    "LayoutDuration": 55.6,
+    "RecalcStyleDuration": 32.8,
+    "ScriptDuration": 42.8,
+    "TaskDuration": 1109.9
+  },
+  "searchTyping17chars": {
+    "LayoutCount": 20,
+    "RecalcStyleCount": 138,
+    "LayoutDuration": 154.3,
+    "RecalcStyleDuration": 45.5,
+    "ScriptDuration": 159.3,
+    "TaskDuration": 1055.4,
+    "longTasks": 1,
+    "longTaskTotalMs": 319,
+    "maxLongTaskMs": 319,
+    "count": "4,216 matching tool calls",
+    "rows": 200
+  },
+  "keystrokeMs": 14,
+  "resize3": {
+    "LayoutCount": 15,
+    "RecalcStyleCount": 33,
+    "LayoutDuration": 436.4,
+    "RecalcStyleDuration": 37.8,
+    "ScriptDuration": 19.8,
+    "TaskDuration": 737.2
+  },
+  "localStorageWrites": 391,
+  "tickerAfter10OpenClose": {
+    "liveIntervals": 0,
+    "tickerPanelsInDom": 0,
+    "jsListenersDelta": 0,
+    "nodesDelta": 4,
+    "heapDeltaKB": 129,
+    "closedPanelWork3s": {
+      "LayoutCount": 0,
+      "RecalcStyleCount": 0,
+      "LayoutDuration": 0,
+      "RecalcStyleDuration": 0,
+      "ScriptDuration": 0,
+      "TaskDuration": 0.9
+    }
+  },
+  "tickerOpen10s": {
+    "LayoutCount": 20,
+    "RecalcStyleCount": 24,
+    "LayoutDuration": 25.3,
+    "RecalcStyleDuration": 9.4,
+    "ScriptDuration": 34.8,
+    "TaskDuration": 456.8,
+    "heapDeltaKB": 1,
+    "rows": 20
+  }
+}
